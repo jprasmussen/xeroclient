@@ -28,6 +28,8 @@ class XeroClient extends Client implements XeroClientInterface
     {
         return [
             'https://identity.xero.com/connect/token',
+            'https://dev-portal.providerportal.nz/api/xero-bridge/token',
+            'https://my.providerportal.nz/api/xero-bridge/token',
             'https://api.xero.com/connections',
             'https://api.xero.com/api.xro/2.0/',
             'https://api.xero.com/payroll.xro/1.0/',
