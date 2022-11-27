@@ -1,12 +1,12 @@
 <?php
 
-namespace Radcliffe\Tests\Xero;
+namespace Jprasmussen\Tests\Xero;
 
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Radcliffe\Xero\Exception\InvalidOptionsException;
-use Radcliffe\Xero\XeroClient;
+use Jprasmussen\Xero\Exception\InvalidOptionsException;
+use Jprasmussen\Xero\XeroClient;
 
 /**
  * Tests for the XeroClient class.
@@ -107,7 +107,7 @@ class XeroClientTest extends XeroClientTestBase
      *
      * @dataProvider providerGetTest
      *
-     * @throws \Radcliffe\Xero\Exception\InvalidOptionsException
+     * @throws \Jprasmussen\Xero\Exception\InvalidOptionsException
      */
     public function testGet($statusCode, $headers, $body)
     {
@@ -158,7 +158,7 @@ class XeroClientTest extends XeroClientTestBase
      *   The expected number of connections.
      *
      * @dataProvider connectionsResponseProvider
-     * @throws \Radcliffe\Xero\Exception\InvalidOptionsException
+     * @throws \Jprasmussen\Xero\Exception\InvalidOptionsException
      */
     public function testGetConnections($statusCode, array $response, $expectedCount)
     {

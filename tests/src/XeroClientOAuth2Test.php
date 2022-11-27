@@ -1,13 +1,13 @@
 <?php
 
-namespace Radcliffe\Tests\Xero;
+namespace Jprasmussen\Tests\Xero;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
-use Radcliffe\Xero\XeroClient;
+use Jprasmussen\Xero\XeroClient;
 
 /**
  * Tests XeroClient OAuth2 code.

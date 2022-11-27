@@ -1,6 +1,6 @@
 <?php
 
-namespace Radcliffe\Xero;
+namespace Jprasmussen\Xero;
 
 interface XeroClientInterface
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Radcliffe\Tests\Xero;
+namespace Jprasmussen\Tests\Xero;
 
-use Radcliffe\Xero\Exception\InvalidOptionsException;
+use Jprasmussen\Xero\Exception\InvalidOptionsException;
 
 class XeroHelperTraitTest extends XeroClientTestBase
 {
@@ -19,7 +19,7 @@ class XeroHelperTraitTest extends XeroClientTestBase
      */
     public function testGetRequestParameters($parameters, $expected)
     {
-        /* @var $mock \Radcliffe\Xero\XeroHelperTrait */
+        /* @var $mock \Jprasmussen\Xero\XeroHelperTrait */
         $mock = $this->getMockForTrait('\Radcliffe\Xero\XeroHelperTrait');
 
         $this->assertEquals($expected, $mock->getRequestParameters($parameters));
@@ -41,7 +41,7 @@ class XeroHelperTraitTest extends XeroClientTestBase
      */
     public function testAddCondition($field, $value, $operator, $expected)
     {
-        /* @var $mock \Radcliffe\Xero\XeroHelperTrait */
+        /* @var $mock \Jprasmussen\Xero\XeroHelperTrait */
         $mock = $this->getMockForTrait('\Radcliffe\Xero\XeroHelperTrait');
 
         $mock->addCondition($field, $value, $operator);
@@ -61,7 +61,7 @@ class XeroHelperTraitTest extends XeroClientTestBase
      */
     public function testAddOperator($operator, $expected)
     {
-        /* @var $mock \Radcliffe\Xero\XeroHelperTrait */
+        /* @var $mock \Jprasmussen\Xero\XeroHelperTrait */
         $mock = $this->getMockForTrait('\Radcliffe\Xero\XeroHelperTrait');
 
         $mock->addOperator($operator);
@@ -81,7 +81,7 @@ class XeroHelperTraitTest extends XeroClientTestBase
      */
     public function testCompileConditions(array $conditions, $expected)
     {
-        /* @var $mock \Radcliffe\Xero\XeroHelperTrait */
+        /* @var $mock \Jprasmussen\Xero\XeroHelperTrait */
         $mock = $this->getMockForTrait('\Radcliffe\Xero\XeroHelperTrait');
         foreach ($conditions as $condition) {
             $mock->addCondition($condition[0], $condition[1], $condition[2]);
@@ -102,7 +102,7 @@ class XeroHelperTraitTest extends XeroClientTestBase
      */
     public function testOrderBy($direction, array $expected)
     {
-        /* @var $mock \Radcliffe\Xero\XeroHelperTrait */
+        /* @var $mock \Jprasmussen\Xero\XeroHelperTrait */
         $mock = $this->getMockForTrait('\Radcliffe\Xero\XeroHelperTrait');
 
         $this->assertEquals($expected, $mock->orderBy('Name', $direction));
@@ -113,7 +113,7 @@ class XeroHelperTraitTest extends XeroClientTestBase
      */
     public function testInvalidAddCondition()
     {
-        /* @var $mock \Radcliffe\Xero\XeroHelperTrait */
+        /* @var $mock \Jprasmussen\Xero\XeroHelperTrait */
         $mock = $this->getMockForTrait('\Radcliffe\Xero\XeroHelperTrait');
 
         $this->expectException(\InvalidArgumentException::class);
@@ -125,7 +125,7 @@ class XeroHelperTraitTest extends XeroClientTestBase
      */
     public function testInvalidLogicalOperator()
     {
-        /* @var $mock \Radcliffe\Xero\XeroHelperTrait */
+        /* @var $mock \Jprasmussen\Xero\XeroHelperTrait */
         $mock = $this->getMockForTrait('\Radcliffe\Xero\XeroHelperTrait');
 
         $this->expectException(\InvalidArgumentException::class);

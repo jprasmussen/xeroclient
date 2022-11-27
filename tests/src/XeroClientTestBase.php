@@ -1,6 +1,6 @@
 <?php
 
-namespace Radcliffe\Tests\Xero;
+namespace Jprasmussen\Tests\Xero;
 
 use PHPUnit\Framework\TestCase;
 

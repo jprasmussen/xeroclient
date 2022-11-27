@@ -1,11 +1,11 @@
 <?php
 
-namespace Radcliffe\Xero;
+namespace Jprasmussen\Xero;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Subscriber\Oauth\Oauth1;
-use Radcliffe\Xero\Exception\InvalidOptionsException;
+use Jprasmussen\Xero\Exception\InvalidOptionsException;
 
 class XeroClient extends Client implements XeroClientInterface
 {
@@ -269,7 +269,7 @@ class XeroClient extends Client implements XeroClientInterface
      * {@inheritdoc}
      *
      * @throws \League\OAuth2\Client\Provider\Exception\IdentityProviderException
-     * @throws \Radcliffe\Xero\Exception\InvalidOptionsException
+     * @throws \Jprasmussen\Xero\Exception\InvalidOptionsException
      * @throws \GuzzleHttp\Exception\ClientException
      */
     public static function createFromToken(

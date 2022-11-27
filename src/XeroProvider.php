@@ -1,12 +1,12 @@
 <?php
 
-namespace Radcliffe\Xero;
+namespace Jprasmussen\Xero;
 
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
 use Psr\Http\Message\ResponseInterface;
-use Radcliffe\Xero\Exception\ResourceOwnerException;
+use Jprasmussen\Xero\Exception\ResourceOwnerException;
 
 /**
  * Implements an OAuth2 provider.
@@ -49,7 +49,7 @@ class XeroProvider extends AbstractProvider
   /**
    * {@inheritdoc}
    *
-   * @throws \Radcliffe\Xero\Exception\ResourceOwnerException
+   * @throws \Jprasmussen\Xero\Exception\ResourceOwnerException
    */
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
@@ -80,7 +80,7 @@ class XeroProvider extends AbstractProvider
   /**
    * {@inheritdoc}
    *
-   * @throws \Radcliffe\Xero\Exception\ResourceOwnerException
+   * @throws \Jprasmussen\Xero\Exception\ResourceOwnerException
    */
     protected function createResourceOwner(array $response, AccessToken $token)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Radcliffe\Xero\Exception;
+namespace Jprasmussen\Xero\Exception;
 
 class ResourceOwnerException extends \Exception
 {

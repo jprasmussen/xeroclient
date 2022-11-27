@@ -1,5 +1,5 @@
 {
-  "name": "mradcliffe/xeroclient",
+  "name": "jprasmussen/xeroclient",
   "description": "Provides a Guzzle client for use with the Xero Accounting and Payroll APIs.",
   "minimum-stability": "stable",
   "license": "MIT",

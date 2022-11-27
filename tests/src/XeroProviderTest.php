@@ -1,10 +1,10 @@
 <?php
 
-namespace Radcliffe\Tests\Xero;
+namespace Jprasmussen\Tests\Xero;
 
 use Prophecy\Argument;
 use Prophecy\Prophet;
-use Radcliffe\Xero\XeroProvider;
+use Jprasmussen\Xero\XeroProvider;
 use PHPUnit\Framework\TestCase;
 
 class XeroProviderTest extends TestCase
